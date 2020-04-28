@@ -1,0 +1,27 @@
+id: en
+name: English
+author: Olyno
+titles:
+  start_server_error: Error when starting server
+  actions: Actions
+  logs: Logs
+  server: Server
+  server_list: Server List
+  create_server: Create a new server
+  created_servers: Created servers
+  new_server_name: What is the name of your awesome server?
+  new_server_version: Select a version of server
+messages:
+  errors:
+    no_server: please create a new server
+    no_server_selected: 'Error when starting server: no server selected'
+buttons:
+  start: start
+  stop: stop
+  force_stop: force stop
+  reload: reload
+  utils: utilities
+  copy_logs: copy logs
+  new_server_eula: I accept
+  new_server_create: Create it!
+  new_server_cancel: Cancel

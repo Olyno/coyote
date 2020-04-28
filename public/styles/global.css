@@ -1,0 +1,35 @@
+:root {
+    --primaryColor: #222831;
+    --primaryColorBright: #393e46;
+    --secondaryColor: #00adb5;
+    --textColor: #eeeeee;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #142850 !important;
+}
+
+.near-items .item {
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+
+.section { background-color: inherit; }
+.small-section { padding: 1.5rem 0; }
+
+.input {
+    color: white !important;
+    background-color: transparent !important;
+    caret-color: white;
+}
+.input::placeholder {
+    color: #999796 !important;
+}
+
+.title {
+    color: white !important;
+}
