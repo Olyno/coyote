@@ -1,11 +1,15 @@
-name: Build app
+name: Build Coyote
 
 on: [push]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
 
@@ -27,4 +31,4 @@ jobs:
         if: success()
         with:
           name: coyote-nightly
-          path: build/libs/Skript-nightly.jar
+          path: out
