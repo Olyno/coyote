@@ -29,7 +29,7 @@ function createWindow () {
 
 	mainWindow.on('closed', () => {
 		logSuccess('Main window closed');
-		mainWindow = null
+		mainWindow = null;
     });
     
     logSuccess('Main window created');
@@ -40,7 +40,7 @@ app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') app.quit();
-})
+});
 
 app.on('activate', () => {
 	if (mainWindow === null) createWindow();
