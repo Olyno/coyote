@@ -76,4 +76,10 @@ Awesome! You can help us with designs, like create better designs, choose better
 
 **I'm not a developer, neither a designer:**
 
-Awesome! You can help us with translations. Coyote has a multiple languages support, available in the directory ``assets/languages``. It's simple ``.yml`` file, really simple to recreate and edit. 
+Awesome! You can help us with translations. Coyote has a multiple languages support, available in the directory ``assets/languages``. It's simple ``.yml`` file, really simple to recreate and edit.
+
+## License
+
+Code released under GPL-3.0 license.
+
+Copyright ©, [Olyno](https://github.com/Olyno).
