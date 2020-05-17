@@ -1,0 +1,30 @@
+appId: com.olyno.coyote
+productName: Coyote
+directories:
+  output: out
+
+mac:
+  category: public.app-category.utilities
+  target:
+    - dmg
+    - mas
+  icon: public/images/favicon.icns
+
+win:
+  icon: public/images/favicon.ico
+  target:
+    - portable
+    - squirrel
+squirrelWindows:
+  iconUrl: "https://raw.githubusercontent.com/Olyno/coyote/master/public/images/favicon.ico"
+  remoteReleases: true
+
+linux:
+  target:
+    - snap
+    - deb
+    - rpm
+    - pacman
+  icon: public/images/favicon.png
+  synopsis: Minecraft pannel
+  category: Network

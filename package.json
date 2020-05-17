@@ -5,33 +5,26 @@
   "main": "src/index.js",
   "homepage": "https://github.com/Olyno/coyote",
   "license": "GPL-3",
-  "icon": "public/images/favicon.png",
+  "repository": "https://github.com/Olyno/coyote",
   "author": {
     "name": "Olyno",
-    "url": "https://github.com/Olyno"
+    "url": "https://github.com/Olyno",
+    "email": "olyno.dev@gmail.com"
   },
   "contributors": [],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "electron .",
-    "export2": "electron-packager . coyote --all --out out",
-    "export": "electron-forge make"
-  },
-  "config": {
-    "forge": "./configs/forge.config.js"
+    "export": "node scripts/export -mwl"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.51",
-    "@electron-forge/maker-deb": "^6.0.0-beta.51",
-    "@electron-forge/maker-pkg": "^6.0.0-beta.51",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.51",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.51",
-    "@electron-forge/maker-zip": "^6.0.0-beta.51",
     "@rollup/plugin-commonjs": "11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
-    "electron": "^8.2.3",
-    "electron-packager": "^14.2.1",
+    "electron": "8.3.0",
+    "electron-builder": "^22.6.0",
+    "electron-builder-squirrel-windows": "^22.6.1",
+    "ora": "^4.0.4",
     "png-to-ico": "^2.1.0",
     "rollup": "^2.7.3",
     "rollup-plugin-livereload": "^1.0.0",
