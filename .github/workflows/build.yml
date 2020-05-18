@@ -48,6 +48,7 @@ jobs:
       - name: Upload builds to release
         uses: svenstaro/upload-release-action@v1-release
         with:
+          tag: ${{ github.ref }}
           repo_token: ${{ secrets.ACCESS_TOKEN }}
           file: out/*.*
           overwrite: true
