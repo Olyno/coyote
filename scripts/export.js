@@ -83,10 +83,10 @@ const spinner = ora({
 build.stderr.on('data', data => console.error(data));
 build.stdout.on('data', data => {
     spinner.text = data;
-})
+});
 
-['disconnect', 'exit'].forEach(listner => {
-    build.on(listner, () => {
+['disconnect', 'exit'].forEach(listener => {
+    build.on(listener, () => {
         spinner.succeed('Build completed');
         zipBuilds();
     });
