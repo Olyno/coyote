@@ -1,19 +1,38 @@
 name: Build Coyote
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
+
+  prepare_release:
+    name: Prepare the release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: true
+          prerelease: false
+
   build:
-
+    name: Build app
     runs-on: ${{ matrix.os }}
-
+    needs: prepare_release
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
 
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: Setup NodeJs
         uses: actions/setup-node@v1
@@ -26,9 +45,17 @@ jobs:
       - name: Build
         run: yarn export
 
+      - name: Upload builds to release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.ACCESS_TOKEN }}
+          file: out/*.*
+          overwrite: true
+          file_glob: true
+
       - name: Upload Nightly Build
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         if: success()
         with:
           name: coyote-nightly
-          path: out
+          path: out/*.*
