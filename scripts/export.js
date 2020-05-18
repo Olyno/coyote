@@ -53,8 +53,8 @@ async function zipBuilds() {
                     if (!fs.existsSync(filePath + '.zip')) {
                         zipJobs.push(
                             zip({
-                                source: path.join('out', file),
-                                destination: path.join('out', file + '.zip')
+                                source: filePath,
+                                destination: filePath + '.zip'
                             })
                         )
                     }
