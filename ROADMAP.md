@@ -1,5 +1,5 @@
 **v0.1.0:**
- - [ ] Beta version, first release. It includes a way to start a minecraft server, stop it, reload it, add plugins from web, create another server and manage all servers.
+ - [x] Beta version, first release. It includes a way to start a minecraft server, stop it, reload it, add plugins from web, create another server and manage all servers.
 
 **v0.2.0:** 
  - [ ] Still beta version. It should include better customization, including settings.
