@@ -33,15 +33,15 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bestzip": "^2.1.7",
     "chalk": "^4.1.1",
-    "dayjs": "^1.8.25",
+    "dayjs": "^1.10.4",
     "electron-squirrel-startup": "^1.0.0",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^9.1.0",
     "js-yaml": "^3.13.1",
     "strip-ansi": "^6.0.0",
-    "sweetalert2": "^9.10.12",
+    "sweetalert2": "^9.17.2",
     "tree-kill": "^1.2.2"
   }
 }
