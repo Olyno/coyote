@@ -35,7 +35,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "bestzip": "^2.1.7",
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.1",
     "dayjs": "^1.8.25",
     "electron-squirrel-startup": "^1.0.0",
     "fs-extra": "^9.0.0",
