@@ -40,7 +40,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "fs-extra": "^9.1.0",
     "js-yaml": "^3.13.1",
-    "strip-ansi": "^6.0.0",
+    "strip-ansi": "^7.0.0",
     "sweetalert2": "^9.17.2",
     "tree-kill": "^1.2.2"
   }
