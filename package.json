@@ -21,7 +21,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
-    "electron": "15.5.5",
+    "electron": "18.3.7",
     "electron-builder": "^22.6.0",
     "electron-builder-squirrel-windows": "^22.6.1",
     "ora": "^4.0.4",
